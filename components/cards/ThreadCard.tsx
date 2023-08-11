@@ -62,7 +62,7 @@ const ThreadCard = ({
               </h4>
             </Link>
             <p className="mt-2 text-small-regular text-light-2">{content}</p>
-            <div className="gap-3 mt-4 flex flex-col">
+            <div className={`${isComment && "mb-10"} gap-3 mt-4 flex flex-col`}>
               <div className="flex gap-3.5">
                 <Image
                   src="/assets/heart-gray.svg"
