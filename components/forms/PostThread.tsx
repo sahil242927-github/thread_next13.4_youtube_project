@@ -29,7 +29,6 @@ function PostThread({ userId }: { userId: string }) {
   });
 
   const onSubmit = async (values: z.infer<typeof ThreadValidation>) => {
-    alert("test");
     await createThread({
       text: values.thread,
       author: userId,
